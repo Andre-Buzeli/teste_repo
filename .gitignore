@@ -2,3 +2,9 @@ node_modules/
 .gitupdate.json
 .gitupdate-tmp-*/
 *.log
+
+# chave da versão do auto-updater (git-autoupdater prepare)
+/autoupdater.json
+
+# pacotes gerados para as releases
+dist/
