@@ -1,0 +1,13 @@
+{
+  "name": "teste-repo",
+  "version": "1.0.0",
+  "description": "App de teste do auto-update via gitupdate-gateway",
+  "bin": {
+    "teste-repo": "app.js"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "update": "node gitupdate-client.js"
+  },
+  "license": "MIT"
+}
