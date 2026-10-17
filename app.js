@@ -16,5 +16,5 @@ function version() {
 console.log("==================================");
 console.log("  teste_repo - app de exemplo");
 console.log("  versao instalada: v" + version());
-console.log("  >> novidade da v1.2.0: auto-updater (autoupdater.hubuzeli.com)!");
+console.log("  >> novidade da v1.3.0: atualizada pelo auto-updater!");
 console.log("==================================");

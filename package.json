@@ -1,6 +1,6 @@
 {
   "name": "teste-repo",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "App de teste do auto-update via gitupdate-gateway",
   "bin": {
     "teste-repo": "app.js"
