@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "node app.js",
-    "update": "node gitupdate-client.js"
+    "update": "node gitupdate-client.cjs"
   },
   "license": "MIT"
 }

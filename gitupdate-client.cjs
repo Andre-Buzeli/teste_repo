@@ -4,8 +4,11 @@
  * gitupdate-client - auto-updater UNIVERSAL para projetos distribuidos pelo
  * gitupdate-gateway (o mesmo gateway usado pelo git-mcp / git-autoupdate).
  *
- * Zero dependencias. Serve para QUALQUER projeto: basta ter um .gitupdate.json
- * na raiz (gerado por `git-autoupdate install`) contendo { endpoint, token }.
+ * Extensao .cjs de proposito: assim e sempre tratado como CommonJS, mesmo que
+ * o projeto hospedeiro tenha "type": "module" no package.json. Zero dependencias.
+ *
+ * Serve para QUALQUER projeto: basta ter um .gitupdate.json na raiz (gerado por
+ * `git-autoupdate install`) contendo { endpoint, token }.
  *
  * O que faz:
  *   1. le o .gitupdate.json (endpoint do gateway + token read-only do cliente)
@@ -16,9 +19,9 @@
  *      source.zip da tag) e aplica por cima dos arquivos do app
  *
  * Uso:
- *   node gitupdate-client.js            # verifica e atualiza se houver versao nova
- *   node gitupdate-client.js --check    # so verifica, nao aplica
- *   node gitupdate-client.js --force    # reinstala a ultima versao mesmo se igual
+ *   node gitupdate-client.cjs            # verifica e atualiza se houver versao nova
+ *   node gitupdate-client.cjs --check    # so verifica, nao aplica
+ *   node gitupdate-client.cjs --force    # reinstala a ultima versao mesmo se igual
  */
 
 const fs = require("fs");
